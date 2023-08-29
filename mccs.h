@@ -17,14 +17,14 @@ enum SettingsOP
     COLORSENSE,
     LIGHTSENSE,
     PROXISENSE,
-}
+};
 
 enum ColorSettingsOP
 {
     BLUELIGHT,
     GAMMA,
     COLORTEMP,
-}
+};
 
 enum FeaturesOP
 {
@@ -36,12 +36,12 @@ enum FeaturesOP
     SNIPERRATIO,
     SNIPERSIZE,
     SNIPERNIGHTVISION,
-}
+};
 
 enum SerialNumOP
 {
     SN_NUMBER = 3,
-}
+};
 
 enum VCPCode
 {
@@ -62,7 +62,7 @@ enum VCPCode
     MODELCATEGORY = 0xE4,
     SPKVOLUME = 0x62,
     SATURATION = 0x8A,
-}
+};
 
 #ifdef __cplusplus
 extern "C"
@@ -140,7 +140,7 @@ extern "C"
     BOOL WINAPI Monitor_Set_BlueLight(DWORD dwNewValue);
     BOOL WINAPI Monitor_Set_Calibration_Mode(DWORD dwNewValue);
     BOOL WINAPI Monitor_Set_ColorSense(DWORD dwNewValue);
-    BOOL WINAPI Monitor_Set_ColorSpace(DWORD dwNewValue)
+    BOOL WINAPI Monitor_Set_ColorSpace(DWORD dwNewValue);
     BOOL WINAPI Monitor_Set_ColorTemp(DWORD dwNewValue);
     BOOL WINAPI Monitor_Set_DisplayMode(DWORD dwNewValue);
     BOOL WINAPI Monitor_Set_FactoryReset();
@@ -170,4 +170,7 @@ extern "C"
 
 #ifdef __cplusplus
 }
+#endif
+
+
 #endif
