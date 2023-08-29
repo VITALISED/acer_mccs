@@ -16,6 +16,13 @@ enum SettingsOP
     PROXISENSE,
 }
 
+enum ColorSettingsOP
+{
+    BLUELIGHT,
+    GAMMA,
+    COLORTEMP,
+}
+
 enum FeaturesOP
 {
     FREESYNC,
@@ -37,13 +44,13 @@ enum VCPCode
 {
     FACTORY_RESET = 0x4,
     SPK_VOLUME = 0x87,
-    SETTINGS_TYPE = 0xE7,
-    SETTINGS_REGISTER = 0xE8,
+    COLORSETTINGS_TYPE = 0xE7,
+    COLORSETTING_REGISTER = 0xE8,
     BLACKBOOST = 0xE5,
     DISPLAYMODE = 0xE2,
     CALIBRATIONMODE = 0xE9,
-    IDK = 0xE0,
-    IDK_DWORD = 0xE1,
+    SETTINGS_TYPE = 0xE0,
+    SETTINGS_REGISTER = 0xE1,
     POWER_CONTROL_MODE = 0xD6,
     COLORSPACE = 0xEA,
     FEATURE_TYPE = 0xEB,
